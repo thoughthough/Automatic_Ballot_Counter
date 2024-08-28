@@ -1,0 +1,72 @@
+\hypertarget{classElection}{}\doxysection{Election Class Reference}
+\label{classElection}\index{Election@{Election}}
+
+
+Inheritance diagram for Election\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classElection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Election\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classElection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classElection_ac81561328346e3f621e3e6afee7ca4e2}\label{classElection_ac81561328346e3f621e3e6afee7ca4e2}} 
+virtual int {\bfseries get\+Total\+Ballots} ()=0
+\item 
+\mbox{\Hypertarget{classElection_aef7f62b68c15c8cdacccfa539b57aedf}\label{classElection_aef7f62b68c15c8cdacccfa539b57aedf}} 
+virtual int {\bfseries get\+Total\+Seats} ()=0
+\item 
+\mbox{\Hypertarget{classElection_a9e4af76bba74049b10a4041a0b8007ab}\label{classElection_a9e4af76bba74049b10a4041a0b8007ab}} 
+virtual void {\bfseries read\+Header} ()=0
+\item 
+\mbox{\Hypertarget{classElection_a7f117b043d27870b688da184ab565085}\label{classElection_a7f117b043d27870b688da184ab565085}} 
+virtual void {\bfseries read\+Ballots} ()=0
+\item 
+\mbox{\Hypertarget{classElection_ac1b24fdc31aab6abff0075fe271e21af}\label{classElection_ac1b24fdc31aab6abff0075fe271e21af}} 
+virtual void {\bfseries determine\+Winners} ()=0
+\item 
+\mbox{\Hypertarget{classElection_a3c6e141ee7b23455c844edc05876c8c4}\label{classElection_a3c6e141ee7b23455c844edc05876c8c4}} 
+virtual void {\bfseries output\+Screen} ()=0
+\item 
+\mbox{\Hypertarget{classElection_a90683d2bdf6d1487da1d2e67be52f604}\label{classElection_a90683d2bdf6d1487da1d2e67be52f604}} 
+virtual void {\bfseries output\+File} ()=0
+\item 
+\mbox{\Hypertarget{classElection_a05fa9a456f67273027f09bf72383a7f8}\label{classElection_a05fa9a456f67273027f09bf72383a7f8}} 
+virtual int {\bfseries tie\+Breaker} (int num\+Tied)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classElection_a4f75d46e49b4e2ac420fb3420cc6703f}\label{classElection_a4f75d46e49b4e2ac420fb3420cc6703f}} 
+\mbox{\hyperlink{classPartyMap}{Party\+Map}} {\bfseries partymap}
+\item 
+\mbox{\Hypertarget{classElection_af0fcc63f59382325ab67332ac254e727}\label{classElection_af0fcc63f59382325ab67332ac254e727}} 
+int {\bfseries seats\+Available}
+\item 
+\mbox{\Hypertarget{classElection_a16160685b5c2ccf24644d2403170f25b}\label{classElection_a16160685b5c2ccf24644d2403170f25b}} 
+int {\bfseries total\+Ballots}
+\item 
+\mbox{\Hypertarget{classElection_aeaffc1d91afd78093895085f5eb8a8a7}\label{classElection_aeaffc1d91afd78093895085f5eb8a8a7}} 
+string {\bfseries file\+\_\+name}
+\item 
+\mbox{\Hypertarget{classElection_af5a45c964463baa98923c868ff11194d}\label{classElection_af5a45c964463baa98923c868ff11194d}} 
+vector$<$ vector$<$ string $>$ $>$ {\bfseries winner\+Info}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/include/election.\+h\end{DoxyCompactItemize}

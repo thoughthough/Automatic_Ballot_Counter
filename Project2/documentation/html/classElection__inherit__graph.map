@@ -1,0 +1,5 @@
+<map id="Election" name="Election">
+<area shape="rect" id="node1" title=" " alt="" coords="79,5,153,32"/>
+<area shape="rect" id="node2" href="$classElectionCPL.html" title="ElectionCPL class handles Closed Party List (CPL) election." alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$classElectionOPL.html" title="ElectionOPL class handles Open Party List (OPL) election." alt="" coords="128,80,227,107"/>
+</map>

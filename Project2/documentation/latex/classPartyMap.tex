@@ -1,0 +1,230 @@
+\hypertarget{classPartyMap}{}\doxysection{Party\+Map Class Reference}
+\label{classPartyMap}\index{PartyMap@{PartyMap}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPartyMap_ab0cecde6928d1dcb552a51570720794e}\label{classPartyMap_ab0cecde6928d1dcb552a51570720794e}} 
+\mbox{\hyperlink{classPartyMap_ab0cecde6928d1dcb552a51570720794e}{Party\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classPartyMap}{Party\+Map}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPartyMap_aaeea0715b50a1872a9fd2412d1fe9533}{add\+Party}} (string name)
+\begin{DoxyCompactList}\small\item\em Adds a party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPartyMap_ae29121d0a8055fe5e00b95477edb96c1}{add\+Candidate}} (string c\+Name, int party\+Idx)
+\begin{DoxyCompactList}\small\item\em Adds a new candidate to a party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPartyMap_a915cc9ad298075cc31b82f4e1c9a1d27}{get\+Party\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets total number of parties. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPartyMap_a1172784bc5fcabce1589a4592a659d79}{get\+Party\+Seats}} (int party\+Idx)
+\begin{DoxyCompactList}\small\item\em Gets number of seats won by a party. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$ \mbox{\hyperlink{classPartyMap_acdfb90c5a2ee181090aaa9752b5ed186}{get\+Parties}} ()
+\begin{DoxyCompactList}\small\item\em Gets a list of all parties. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ $>$ \mbox{\hyperlink{classPartyMap_a6dc6087f7e6d334ed9da8d7dfb2be76d}{get\+Candidates}} ()
+\begin{DoxyCompactList}\small\item\em List of list of all candidates, by party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPartyMap_a39ad08cc756961d28faabc6b5beb8c22}{add\+Party\+Vote}} (int party\+Idx)
+\begin{DoxyCompactList}\small\item\em Adds a vote to a party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPartyMap_adc223236851da3e94a953449635ccba2}{add\+Candidate\+Vote}} (int party\+Idx, int can\+Idx)
+\begin{DoxyCompactList}\small\item\em Adds a vote to a candidate within a party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPartyMap_a5c44164246f0f54a7b9307bd3fa393e8}{tie\+Breaker}} (int num\+Tied)
+\begin{DoxyCompactList}\small\item\em Breaks the ties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPartyMap_a9d063112fe8a031016ea0ec3a7e6157b}{calculate\+Seats}} (int total\+Votes, int total\+Seats, vector$<$ vector$<$ string $>$$>$ \&winner\+Info)
+\begin{DoxyCompactList}\small\item\em Calculates and assigns seats to parties based on votes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPartyMap_a8259773e0bd43f7f42d06af72974007d}\label{classPartyMap_a8259773e0bd43f7f42d06af72974007d}} 
+void \mbox{\hyperlink{classPartyMap_a8259773e0bd43f7f42d06af72974007d}{set\+Rank\+By\+Vote\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Sets the rank of candidates in a party based on vote. \end{DoxyCompactList}\item 
+tuple$<$ string, string, int $>$ \mbox{\hyperlink{classPartyMap_a2232c98377eedf0581f9d3d35001cc23}{extract\+Highest\+Rank}} (int party\+Idx)
+\begin{DoxyCompactList}\small\item\em Extracts the candidate with highest rank from party. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPartyMap_a8d693ef3178e6649a34f1f4d99c23a9d}\label{classPartyMap_a8d693ef3178e6649a34f1f4d99c23a9d}} 
+void \mbox{\hyperlink{classPartyMap_a8d693ef3178e6649a34f1f4d99c23a9d}{print\+Parties}} ()
+\begin{DoxyCompactList}\small\item\em Prints a list of parties and their candidates to the GUI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPartyMap_ae29121d0a8055fe5e00b95477edb96c1}\label{classPartyMap_ae29121d0a8055fe5e00b95477edb96c1}} 
+\index{PartyMap@{PartyMap}!addCandidate@{addCandidate}}
+\index{addCandidate@{addCandidate}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{addCandidate()}{addCandidate()}}
+{\footnotesize\ttfamily int Party\+Map\+::add\+Candidate (\begin{DoxyParamCaption}\item[{string}]{c\+Name,  }\item[{int}]{party\+Idx }\end{DoxyParamCaption})}
+
+
+
+Adds a new candidate to a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\+Name} & Name of candidate to be added \\
+\hline
+{\em party\+Idx} & Index of the party which the candidate belongs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of newly added candidate in party\textquotesingle{}s candidate list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_adc223236851da3e94a953449635ccba2}\label{classPartyMap_adc223236851da3e94a953449635ccba2}} 
+\index{PartyMap@{PartyMap}!addCandidateVote@{addCandidateVote}}
+\index{addCandidateVote@{addCandidateVote}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{addCandidateVote()}{addCandidateVote()}}
+{\footnotesize\ttfamily int Party\+Map\+::add\+Candidate\+Vote (\begin{DoxyParamCaption}\item[{int}]{party\+Idx,  }\item[{int}]{can\+Idx }\end{DoxyParamCaption})}
+
+
+
+Adds a vote to a candidate within a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+Idx} & Index of party \\
+\hline
+{\em can\+Idx} & Index of candidate in a party \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vote count of candidate after a vote is added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_aaeea0715b50a1872a9fd2412d1fe9533}\label{classPartyMap_aaeea0715b50a1872a9fd2412d1fe9533}} 
+\index{PartyMap@{PartyMap}!addParty@{addParty}}
+\index{addParty@{addParty}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{addParty()}{addParty()}}
+{\footnotesize\ttfamily int Party\+Map\+::add\+Party (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Adds a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the party to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the added party in the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_a39ad08cc756961d28faabc6b5beb8c22}\label{classPartyMap_a39ad08cc756961d28faabc6b5beb8c22}} 
+\index{PartyMap@{PartyMap}!addPartyVote@{addPartyVote}}
+\index{addPartyVote@{addPartyVote}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{addPartyVote()}{addPartyVote()}}
+{\footnotesize\ttfamily int Party\+Map\+::add\+Party\+Vote (\begin{DoxyParamCaption}\item[{int}]{party\+Idx }\end{DoxyParamCaption})}
+
+
+
+Adds a vote to a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+Idx} & Index of party to get a vote. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vote count for a party after one vote is added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_a9d063112fe8a031016ea0ec3a7e6157b}\label{classPartyMap_a9d063112fe8a031016ea0ec3a7e6157b}} 
+\index{PartyMap@{PartyMap}!calculateSeats@{calculateSeats}}
+\index{calculateSeats@{calculateSeats}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{calculateSeats()}{calculateSeats()}}
+{\footnotesize\ttfamily void Party\+Map\+::calculate\+Seats (\begin{DoxyParamCaption}\item[{int}]{total\+Votes,  }\item[{int}]{total\+Seats,  }\item[{vector$<$ vector$<$ string $>$$>$ \&}]{winner\+Info }\end{DoxyParamCaption})}
+
+
+
+Calculates and assigns seats to parties based on votes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Votes} & Number of votes cast \\
+\hline
+{\em total\+Seats} & Number of seats \\
+\hline
+{\em winner\+Info} & Reference to a vector storing information about winners \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPartyMap_a2232c98377eedf0581f9d3d35001cc23}\label{classPartyMap_a2232c98377eedf0581f9d3d35001cc23}} 
+\index{PartyMap@{PartyMap}!extractHighestRank@{extractHighestRank}}
+\index{extractHighestRank@{extractHighestRank}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{extractHighestRank()}{extractHighestRank()}}
+{\footnotesize\ttfamily tuple$<$ string, string, int $>$ Party\+Map\+::extract\+Highest\+Rank (\begin{DoxyParamCaption}\item[{int}]{party\+Idx }\end{DoxyParamCaption})}
+
+
+
+Extracts the candidate with highest rank from party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+Idx} & Index of party \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tuple of the party name, candidate name, and vote count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_a6dc6087f7e6d334ed9da8d7dfb2be76d}\label{classPartyMap_a6dc6087f7e6d334ed9da8d7dfb2be76d}} 
+\index{PartyMap@{PartyMap}!getCandidates@{getCandidates}}
+\index{getCandidates@{getCandidates}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{getCandidates()}{getCandidates()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ $>$ Party\+Map\+::get\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+List of list of all candidates, by party. 
+
+\begin{DoxyReturn}{Returns}
+Vector of vectors, =inner vector is of candidates of a party 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_acdfb90c5a2ee181090aaa9752b5ed186}\label{classPartyMap_acdfb90c5a2ee181090aaa9752b5ed186}} 
+\index{PartyMap@{PartyMap}!getParties@{getParties}}
+\index{getParties@{getParties}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{getParties()}{getParties()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$ Party\+Map\+::get\+Parties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a list of all parties. 
+
+\begin{DoxyReturn}{Returns}
+Vector of all parties 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_a915cc9ad298075cc31b82f4e1c9a1d27}\label{classPartyMap_a915cc9ad298075cc31b82f4e1c9a1d27}} 
+\index{PartyMap@{PartyMap}!getPartyCount@{getPartyCount}}
+\index{getPartyCount@{getPartyCount}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{getPartyCount()}{getPartyCount()}}
+{\footnotesize\ttfamily int Party\+Map\+::get\+Party\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets total number of parties. 
+
+\begin{DoxyReturn}{Returns}
+Number of parties 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_a1172784bc5fcabce1589a4592a659d79}\label{classPartyMap_a1172784bc5fcabce1589a4592a659d79}} 
+\index{PartyMap@{PartyMap}!getPartySeats@{getPartySeats}}
+\index{getPartySeats@{getPartySeats}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{getPartySeats()}{getPartySeats()}}
+{\footnotesize\ttfamily int Party\+Map\+::get\+Party\+Seats (\begin{DoxyParamCaption}\item[{int}]{party\+Idx }\end{DoxyParamCaption})}
+
+
+
+Gets number of seats won by a party. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em party\+Idx} & Index of the party \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of seats won by party 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartyMap_a5c44164246f0f54a7b9307bd3fa393e8}\label{classPartyMap_a5c44164246f0f54a7b9307bd3fa393e8}} 
+\index{PartyMap@{PartyMap}!tieBreaker@{tieBreaker}}
+\index{tieBreaker@{tieBreaker}!PartyMap@{PartyMap}}
+\doxysubsubsection{\texorpdfstring{tieBreaker()}{tieBreaker()}}
+{\footnotesize\ttfamily int Party\+Map\+::tie\+Breaker (\begin{DoxyParamCaption}\item[{int}]{num\+Tied }\end{DoxyParamCaption})}
+
+
+
+Breaks the ties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Tied} & Number of ties \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/party\+Map.\+h\item 
+src/party\+Map.\+cc\end{DoxyCompactItemize}

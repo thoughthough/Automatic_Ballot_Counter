@@ -1,0 +1,11 @@
+========RESULTS========
+Election type: Municipal Voting (MV)
+Number of Parties: 2
+Number of Ballots: 200001
+Number of Seats: 3
+Winners:
+  Party: A Name: To Vote Percentage: 100.00%
+  Party: A Name: Re Vote Percentage: 95.00%
+  Party: B Name: Gi Vote Percentage: 77.50%
+Losers:
+  Party: B Name: Ju Vote Percentage: 12.50%

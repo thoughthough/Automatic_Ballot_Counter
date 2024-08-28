@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classElection.html" title=" " alt="" coords="5,31,80,57"/>
+<area shape="rect" id="node2" href="$classElectionCPL.html" title="ElectionCPL class handles Closed Party List (CPL) election." alt="" coords="128,5,227,32"/>
+<area shape="rect" id="node3" href="$classElectionOPL.html" title="ElectionOPL class handles Open Party List (OPL) election." alt="" coords="128,56,227,83"/>
+</map>

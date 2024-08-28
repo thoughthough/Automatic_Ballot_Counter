@@ -1,0 +1,19 @@
+========RESULTS========
+Election type: Open Party
+Number of Parties: 3
+Number of Ballots: 0
+Number of Seats: 1
+Parties and Candidates:
+  Dem:
+    Fido Kane
+  Rep:
+    Mic Macker
+  Ind:
+    Roe Wade
+Winners:
+  Party: Dem Name: Fido Kane Votes: 0
+Seat Allocation:
+  Parties     Votes   First Allocation   Remaining Votes   Second Allocation  Final Seat Total  % of Vote to % of Seats
+Dem              0                0                0                1                1                0%/100%          
+Rep              0                0                0                0                0                0%/0%            
+Ind              0                0                0                0                0                0%/0%            

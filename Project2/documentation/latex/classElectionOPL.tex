@@ -1,0 +1,226 @@
+\hypertarget{classElectionOPL}{}\doxysection{Election\+OPL Class Reference}
+\label{classElectionOPL}\index{ElectionOPL@{ElectionOPL}}
+
+
+\mbox{\hyperlink{classElectionOPL}{Election\+OPL}} class handles Open \mbox{\hyperlink{classParty}{Party}} List (OPL) election.  
+
+
+
+
+{\ttfamily \#include $<$election\+OPL.\+h$>$}
+
+
+
+Inheritance diagram for Election\+OPL\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classElectionOPL__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Election\+OPL\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classElectionOPL__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElectionOPL_a14c6961ff8e1785b0ad88a04ffc1decd}{Election\+OPL}} (string file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Constructs \mbox{\hyperlink{classElectionOPL}{Election\+OPL}} object with a user declared file name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElectionOPL_afc8ba4adde37e14abcd3057f71824d48}{get\+Total\+Ballots}} ()
+\begin{DoxyCompactList}\small\item\em Gets the total number of ballots. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElectionOPL_aebad52ccefc09bd919c8bb8a20f10738}{get\+Total\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of seats available. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElectionOPL_adec8d4c4b7d0b36a72f39ac24deb97de}{get\+Total\+Candidates}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of candidates in the election. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElectionOPL_ac7afbde7ced1a335b1eacc4b8f937d24}{read\+Header}} ()
+\begin{DoxyCompactList}\small\item\em Reads the header information from the election file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElectionOPL_ad12e11b294aefab482511e9471e11f63}{read\+Ballots}} ()
+\begin{DoxyCompactList}\small\item\em Reads and processes all ballots. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElectionOPL_a880901a5f2effd3718932df5923ba552}{determine\+Winners}} ()
+\begin{DoxyCompactList}\small\item\em Determines the winners. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElectionOPL_a07976eef4bd6e75fa22f60ce967b8ee4}{output\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Outputs the results to the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElectionOPL_a7ca46a174b4b0ae663831fa1bcf485b6}{output\+File}} ()
+\begin{DoxyCompactList}\small\item\em Outputs the results to a file named \textquotesingle{}audit.\+txt\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElectionOPL_a237316ab999373c29b703f65838e7feb}{tie\+Breaker}} (int num\+Tied)
+\begin{DoxyCompactList}\small\item\em Breaks a tie between candidates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classElectionOPL}{Election\+OPL}} class handles Open \mbox{\hyperlink{classParty}{Party}} List (OPL) election. 
+
+Responsible for reading in election data from a file in the same directory as src, reads election data from file, processes ballots, determines winners, and outputs results. Extends \mbox{\hyperlink{classElection}{Election}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classElectionOPL_a14c6961ff8e1785b0ad88a04ffc1decd}\label{classElectionOPL_a14c6961ff8e1785b0ad88a04ffc1decd}} 
+\index{ElectionOPL@{ElectionOPL}!ElectionOPL@{ElectionOPL}}
+\index{ElectionOPL@{ElectionOPL}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{ElectionOPL()}{ElectionOPL()}}
+{\footnotesize\ttfamily Election\+OPL\+::\+Election\+OPL (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Constructs \mbox{\hyperlink{classElectionOPL}{Election\+OPL}} object with a user declared file name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & The name of the file containing election data. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classElectionOPL_a880901a5f2effd3718932df5923ba552}\label{classElectionOPL_a880901a5f2effd3718932df5923ba552}} 
+\index{ElectionOPL@{ElectionOPL}!determineWinners@{determineWinners}}
+\index{determineWinners@{determineWinners}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{determineWinners()}{determineWinners()}}
+{\footnotesize\ttfamily void Election\+OPL\+::determine\+Winners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Determines the winners. 
+
+This calculates the number of seats won by each party and which candidates win. 
+
+Implements \mbox{\hyperlink{classElection}{Election}}.
+
+\mbox{\Hypertarget{classElectionOPL_afc8ba4adde37e14abcd3057f71824d48}\label{classElectionOPL_afc8ba4adde37e14abcd3057f71824d48}} 
+\index{ElectionOPL@{ElectionOPL}!getTotalBallots@{getTotalBallots}}
+\index{getTotalBallots@{getTotalBallots}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{getTotalBallots()}{getTotalBallots()}}
+{\footnotesize\ttfamily int Election\+OPL\+::get\+Total\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the total number of ballots. 
+
+\begin{DoxyReturn}{Returns}
+Total number of ballots. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classElection}{Election}}.
+
+\mbox{\Hypertarget{classElectionOPL_adec8d4c4b7d0b36a72f39ac24deb97de}\label{classElectionOPL_adec8d4c4b7d0b36a72f39ac24deb97de}} 
+\index{ElectionOPL@{ElectionOPL}!getTotalCandidates@{getTotalCandidates}}
+\index{getTotalCandidates@{getTotalCandidates}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{getTotalCandidates()}{getTotalCandidates()}}
+{\footnotesize\ttfamily int Election\+OPL\+::get\+Total\+Candidates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the number of candidates in the election. 
+
+\begin{DoxyReturn}{Returns}
+The number of candidates. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElectionOPL_aebad52ccefc09bd919c8bb8a20f10738}\label{classElectionOPL_aebad52ccefc09bd919c8bb8a20f10738}} 
+\index{ElectionOPL@{ElectionOPL}!getTotalSeats@{getTotalSeats}}
+\index{getTotalSeats@{getTotalSeats}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{getTotalSeats()}{getTotalSeats()}}
+{\footnotesize\ttfamily int Election\+OPL\+::get\+Total\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the number of seats available. 
+
+\begin{DoxyReturn}{Returns}
+The number of seats. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classElection}{Election}}.
+
+\mbox{\Hypertarget{classElectionOPL_a7ca46a174b4b0ae663831fa1bcf485b6}\label{classElectionOPL_a7ca46a174b4b0ae663831fa1bcf485b6}} 
+\index{ElectionOPL@{ElectionOPL}!outputFile@{outputFile}}
+\index{outputFile@{outputFile}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{outputFile()}{outputFile()}}
+{\footnotesize\ttfamily void Election\+OPL\+::output\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the results to a file named \textquotesingle{}audit.\+txt\textquotesingle{}. 
+
+Like \textquotesingle{}output\+Screen\textquotesingle{}, but directs to a file. 
+
+Implements \mbox{\hyperlink{classElection}{Election}}.
+
+\mbox{\Hypertarget{classElectionOPL_a07976eef4bd6e75fa22f60ce967b8ee4}\label{classElectionOPL_a07976eef4bd6e75fa22f60ce967b8ee4}} 
+\index{ElectionOPL@{ElectionOPL}!outputScreen@{outputScreen}}
+\index{outputScreen@{outputScreen}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{outputScreen()}{outputScreen()}}
+{\footnotesize\ttfamily void Election\+OPL\+::output\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Outputs the results to the screen. 
+
+Displays election results, party names, candidate names, and winners. 
+
+Implements \mbox{\hyperlink{classElection}{Election}}.
+
+\mbox{\Hypertarget{classElectionOPL_ad12e11b294aefab482511e9471e11f63}\label{classElectionOPL_ad12e11b294aefab482511e9471e11f63}} 
+\index{ElectionOPL@{ElectionOPL}!readBallots@{readBallots}}
+\index{readBallots@{readBallots}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{readBallots()}{readBallots()}}
+{\footnotesize\ttfamily void Election\+OPL\+::read\+Ballots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reads and processes all ballots. 
+
+This method goes through each ballot, counting votes party. 
+
+Implements \mbox{\hyperlink{classElection}{Election}}.
+
+\mbox{\Hypertarget{classElectionOPL_ac7afbde7ced1a335b1eacc4b8f937d24}\label{classElectionOPL_ac7afbde7ced1a335b1eacc4b8f937d24}} 
+\index{ElectionOPL@{ElectionOPL}!readHeader@{readHeader}}
+\index{readHeader@{readHeader}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{readHeader()}{readHeader()}}
+{\footnotesize\ttfamily void Election\+OPL\+::read\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reads the header information from the election file. 
+
+Includes the number of seats, number of ballots, and number of candidates. It then organizes candidates by party. 
+
+Implements \mbox{\hyperlink{classElection}{Election}}.
+
+\mbox{\Hypertarget{classElectionOPL_a237316ab999373c29b703f65838e7feb}\label{classElectionOPL_a237316ab999373c29b703f65838e7feb}} 
+\index{ElectionOPL@{ElectionOPL}!tieBreaker@{tieBreaker}}
+\index{tieBreaker@{tieBreaker}!ElectionOPL@{ElectionOPL}}
+\doxysubsubsection{\texorpdfstring{tieBreaker()}{tieBreaker()}}
+{\footnotesize\ttfamily int Election\+OPL\+::tie\+Breaker (\begin{DoxyParamCaption}\item[{int}]{num\+Tied }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Breaks a tie between candidates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Tied} & The number of candidates tied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the winner after breaking the tie. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classElection}{Election}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/\mbox{\hyperlink{electionOPL_8h}{election\+OPL.\+h}}\item 
+src/\mbox{\hyperlink{electionOPL_8cc}{election\+OPL.\+cc}}\end{DoxyCompactItemize}
