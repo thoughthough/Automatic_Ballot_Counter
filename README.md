@@ -1,4 +1,4 @@
-#Zachary Ross
+
 
 To use the program it needs to be compiled from the Project2/src directory using:
 ```
